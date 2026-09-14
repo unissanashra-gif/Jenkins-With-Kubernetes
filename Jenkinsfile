@@ -4,9 +4,9 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = 'unisanashra/k8s-cicd-app'
-
-        DOCKER = '/Users/afsarunisa/.docker/bin/docker'
-        KUBECTL = '/Users/afsarunisa/.docker/bin/kubectl'
+        PATH = "/Users/afsarunisa/.docker/bin:${env.PATH}"
+        DOCKER = 'docker'
+        KUBECTL = 'kubectl'
     }
 
     stages {

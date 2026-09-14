@@ -20,7 +20,7 @@ spec:
       containers:
         - name: k8s-cicd-app
 
-          image: unisanashra/k8s-cicd-app
+          image: IMAGE_PLACEHOLDER
 
           ports:
             - containerPort: 80
